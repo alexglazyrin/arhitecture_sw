@@ -1,12 +1,12 @@
 package ru.gb;
 
 public class Camera {
-    public double location;
-    public double angle;
+    Point3D Location;
+    Angle3D Angle;
 
-    void rotate(){
+    void Rotate(Angle3D angle) {
     }
 
-    void move(){
+    void Move(Point3D point) {
     }
 }
