@@ -1,20 +1,19 @@
 package ru.gb.hw2;
 
-public class BowFactory extends WeaponFactory{
+public class BowFactory extends WeaponFactory {
+    private static Weapon weapon;
 
-    Weapon createWeapon(String item){
-        if(item.equals("Standart")){
-            return new StandartBow(100,10);
-        }else if(item.equals("ElfBow")){
-            return new ElfBow(200,50);
-        }else{
-            return null;
+    public static Weapon createWeapon(BowType type){
+
+        switch (type){
+            case ELF:
+                weapon = new ElfBow(50, 200);
+                break;
+            case STANDART:
+                weapon = new StandartBow(30, 170);
+                break;
         }
+        return weapon;
     }
 
-    /*public Weapon createBow(){
-
-        Weapon weapon = new Bow(String bowType);
-        return weapon;
-    }*/
 }

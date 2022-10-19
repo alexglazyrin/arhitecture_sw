@@ -6,4 +6,9 @@ public abstract class Armor {
     protected Armor(int defend){
         this.defend = defend;
     }
+
+    public void breakArmor(int range){
+
+    }
+
 }

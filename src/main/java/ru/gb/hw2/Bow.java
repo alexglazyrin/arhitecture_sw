@@ -1,6 +1,7 @@
 package ru.gb.hw2;
 
-public abstract class Bow extends Weapon{
+public class Bow extends Weapon {
+
     private int distance;
 
     protected Bow(int range, int distance){

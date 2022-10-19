@@ -1,19 +1,15 @@
 package ru.gb.hw2;
 
-public class Archer extends Hero{
+public class Archer extends Hero {
+    private Weapon weapon;
 
-    //String type;
-    WeaponFactory archerFactory = new BowFactory();
-    //Weapon weapon = archerFactory.orderWeapon("Standart");
+    BowFactory bowFactory = new BowFactory();
 
-    protected Archer(int health, Weapon weapon) {
-        super(health);
-        archerFactory.orderWeapon("Standart") = weapon;
+    protected Archer(int health, ArmorType type, BowType bType) {
+        super(health,type);
+        this.weapon = bowFactory.createWeapon(bType);
     }
-    //BowFactory.createWeapon(type) = weapon;
-
-
-    }
+}
 
 
 

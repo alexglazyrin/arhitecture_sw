@@ -1,15 +1,14 @@
 package ru.gb.hw2;
 
 public class Hero {
-
     private int health;
+    private Armor armor;
 
-    protected Hero(int health, Weapon weapon){
+
+    public Hero(int  health, ArmorType type){
         this.health = health;
-        weapon.orderWeapon;
+        this.armor = ArmorFactory.createArmor(type);
     }
 
-
-    Hero hero1 = new Archer();
 
 }
