@@ -13,23 +13,21 @@ public class Main {
         shape3.create();
         shape4.create();
 
-        Shape[]shapes = new Shape[]{shape1, shape2, shape3, shape4};
+        Shape[] shapes = new Shape[]{shape1, shape2, shape3, shape4};
         calcAllS(shapes);
         calcAllP(shapes);
 
     }
 
-
-
     public static void calcAllS(Shape[] shapes) {
-        for(int i = 0; i < shapes.length; i++){
+        for (int i = 0; i < shapes.length; i++) {
             shapes[i].calcS();
         }
     }
 
-    public static void  calcAllP(Shape[] shapes){
-        for(int i = 0; i < shapes.length; i++){
+    public static void calcAllP(Shape[] shapes) {
+        for (int i = 0; i < shapes.length; i++) {
             shapes[i].calcP();
         }
-}
+    }
 }
