@@ -1,6 +1,6 @@
 package ru.gb.hw3;
 
-public class Rectangle extends Shape implements ICalcS,ICalcP {
+public class Rectangle extends Shape{
 
     public void create() {
         System.out.println("Создали прямоугольник");
