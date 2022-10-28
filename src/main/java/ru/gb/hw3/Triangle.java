@@ -1,6 +1,6 @@
 package ru.gb.hw3;
 
-public class Triangle extends Shape implements ISquadTypeShape{
+public class Triangle extends Shape implements ICalcS,ICalcP {
 
     public void create() {
         System.out.println("Создали треугольник");

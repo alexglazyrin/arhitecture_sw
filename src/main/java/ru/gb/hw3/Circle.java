@@ -1,6 +1,6 @@
 package ru.gb.hw3;
 
-public class Circle extends Shape implements ICircle{
+public class Circle extends Shape implements ICalcS, ICalcP {
 
     public void create() {
         System.out.println("Создали окружности");
@@ -10,7 +10,7 @@ public class Circle extends Shape implements ICircle{
         System.out.println("Посчитали площадь окружности");
     }
 
-    public void calcPr() {
+    public void calcP() {
         System.out.println("Посчитали длинну окружности");
     }
 

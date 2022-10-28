@@ -1,6 +1,6 @@
 package ru.gb.hw3;
 
-public class Square extends Shape implements ISquadTypeShape{
+public class Square extends Shape implements ICalcS, ICalcP {
 
     public void create() {
         System.out.println("Создали квадрат");

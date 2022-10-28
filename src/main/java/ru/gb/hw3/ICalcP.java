@@ -1,5 +1,5 @@
 package ru.gb.hw3;
 
-public interface ISquadTypeShape {
+public interface ICalcP {
     void calcP();
 }

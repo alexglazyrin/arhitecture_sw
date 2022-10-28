@@ -6,12 +6,14 @@ public class Main {
         Shape shape1 = new Circle();
         Shape shape2 = new Square();
         Shape shape3 = new Triangle();
+        Shape shape4 = new Rectangle();
 
         shape1.create();
         shape2.create();
         shape3.create();
+        shape4.create();
 
-        Shape[]shapes = new Shape[]{shape1, shape2, shape3};
+        Shape[]shapes = new Shape[]{shape1, shape2, shape3, shape4};
         calcAllS(shapes);
         calcAllP(shapes);
 
@@ -27,12 +29,7 @@ public class Main {
 
     public static void  calcAllP(Shape[] shapes){
         for(int i = 0; i < shapes.length; i++){
-            if(shapes[i] instanceof ICircle){
-                ((ICircle) shapes[i]).calcPr();
-            }
-            if(shapes[i] instanceof ISquadTypeShape){
-                ((ISquadTypeShape) shapes[i]).calcP();
-            }
+            shapes[i].calcP();
         }
 }
 }
